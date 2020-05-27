@@ -1,4 +1,5 @@
-# python3.8 安装以及使用 scrapy，爬取糗事百科小案例
+# python3.8 安装scrapy及其使用 ，爬取糗事百科小案例
+> **yls**  *2020/5/27*
 ## 安装scrapy之前，先安装 twisted，否则会报错
 
 1. 在 https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted 中下载与python对应版本的 Twisted   
@@ -247,3 +248,5 @@ class QsbkspiderSpider(scrapy.Spider):
         yield item
 
 ```
+
+## 5. [代码托管地址：https://github.com/1612480331/scrapy/tree/master/qsbk](https://github.com/1612480331/scrapy/tree/master/qsbk)
