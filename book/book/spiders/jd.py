@@ -13,8 +13,7 @@ class JdSpider(scrapy.Spider):
     def parse(self, response):
         dt_list = response.xpath("//div[@class='mc']/dl/dt")[1:2]
         for dt in dt_list:
-            item = {}
-            item["b_cate"] = dt.xpath("./a/text()").extract_first()
+            item = {"b_cate": dt.xpath("./a/text()").extract_first()}
             em_list = dt.xpath("./following-sibling::dd[1]/em")
             for em in em_list:
                 item["s_href"] = "https:" + em.xpath("./a/@href").extract_first()

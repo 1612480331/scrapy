@@ -8,7 +8,7 @@
 from scrapy import signals
 
 
-class LoginSpiderMiddleware(object):
+class QsbkSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapylearn acts as if the spider middleware does not modify the
     # passed objects.
@@ -56,7 +56,7 @@ class LoginSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class LoginDownloaderMiddleware(object):
+class QsbkDownloaderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapylearn acts as if the downloader middleware does not modify the
     # passed objects.

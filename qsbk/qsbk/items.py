@@ -7,14 +7,14 @@
 
 import scrapy
 
+"""
+定义要爬取的数据字段,就可以不使用字典了
+"""
 
-class TutorialItem(scrapy.Item):
+
+class QsbkItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapylearn.Field()
-    pass
-
-
-class DmozItem(scrapy.Item):
-    title = scrapy.Field()
-    link = scrapy.Field()
-    desc = scrapy.Field()
+    author = scrapy.Field()
+    content = scrapy.Field()
+    time = scrapy.Field()

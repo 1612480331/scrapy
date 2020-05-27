@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for book project
+# Scrapy settings for qsbk project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,11 +9,11 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'book'
+BOT_NAME = 'qsbk'
 
-SPIDER_MODULES = ['book.spiders']
-NEWSPIDER_MODULE = 'book.spiders'
-LOG_LEVEL="WARNING"
+SPIDER_MODULES = ['qsbk.spiders']
+NEWSPIDER_MODULE = 'qsbk.spiders'
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
@@ -28,6 +28,7 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
 #DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 1
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -46,14 +47,14 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'book.middlewares.BookSpiderMiddleware': 543,
-#}
+# SPIDER_MIDDLEWARES = {
+#    'qsbk.middlewares.QsbkSpiderMiddleware': 543,
+# }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'book.middlewares.BookDownloaderMiddleware': 543,
+#    'qsbk.middlewares.QsbkDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +66,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'book.pipelines.BookPipeline': 300,
+   'qsbk.pipelines.QsbkPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

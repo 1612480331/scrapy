@@ -59,7 +59,7 @@ ROBOTSTXT_OBEY = True
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
+#    'scrapylearn.extensions.telnet.TelnetConsole': None,
 #}
 
 # Configure item pipelines
@@ -87,4 +87,4 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_EXPIRATION_SECS = 0
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
-#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+#HTTPCACHE_STORAGE = 'scrapylearn.extensions.httpcache.FilesystemCacheStorage'

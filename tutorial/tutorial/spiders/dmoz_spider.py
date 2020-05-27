@@ -15,7 +15,7 @@ class DmozSpider(scrapy.Spider):
         print(i)
 
         item = {}
-        # from scrapy.tutorial.tutorial.items import DmozItem
+        # from scrapylearn.tutorial.tutorial.items import DmozItem
         # item = DmozItem()
         # item['title'] = "faf"
         logger.warning(item)
