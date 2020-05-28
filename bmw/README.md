@@ -4,7 +4,7 @@
 
 * [Crawl Spider介绍](http://www.imooc.com/article/37268)
 ## scrapy 爬取文件或者图片简介
-### 1. 为什么选择使用scrapy内置的下载文件的方法：
+### *. 为什么选择使用scrapy内置的下载文件的方法：
 ```
 1. 避免重新下载最近已经下载过的数据
 2. 可以方便的指定问及那存储的路径
@@ -13,7 +13,7 @@
 5. 可以方便的检测图片的宽高，确保他们的满足最小限制
 6. 一部下载，效率高
 ```
-### 2. 下载文件的 Files Pipline：
+### *. 下载文件的 Files Pipline：
 ```
 使用 Files Pipeline 下载文件时，按以下步骤完成
 1. 定义好一个 Item,在这个Item中定义两个属性，分别为 file_urls和files。file_urls用来存储需要下载的文件的链接，需要给一个链表
@@ -22,7 +22,7 @@
 4. 启动pipeline:在ITEM_PIPELINES中设置scrapy.pipeline.files.FilesPipeline:1。若根据自身业务可以重写 FilesPipeline
 重写时也要在ITEM_PIPELINES中设置激活
 ```
-### 3. 下载文件的 Images Pipline：
+### *. 下载文件的 Images Pipline：
 ```
 使用 Images Pipeline 下载文件时，按以下步骤完成
 1. 定义好一个 Item,在这个Item中定义两个属性，分别为 image_urls和images。
@@ -166,4 +166,4 @@ class Bmw5Spider(CrawlSpider):
 scrapy crawl bmw5
 ```
 
-## 8. [代码托管地址:]()
+## 8. [代码托管地址:https://github.com/1612480331/scrapy/tree/master/bmw](https://github.com/1612480331/scrapy/tree/master/bmw)
