@@ -1,5 +1,8 @@
 # Crawl Spider 爬取微信小程序社区信息
+> **yls**  *2020/5/27*
 需要使用 `LinkExtractor` `Rule`来决定爬虫的具体走向
+
+* [Crawl Spider介绍](http://www.imooc.com/article/37268)
 ## 1. 创建项目
 ```
 scrapy startproject wxapp
@@ -106,4 +109,4 @@ class WxappspiderSpider(CrawlSpider):
 scrapy crawl wxappSpider
 ```
 
-## 8. [代码托管地址]()
+## 8. [代码托管地址:https://github.com/1612480331/scrapy/tree/master/wxapp](https://github.com/1612480331/scrapy/tree/master/wxapp)
